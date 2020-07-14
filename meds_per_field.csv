@@ -1,0 +1,122 @@
+code,field_name,meds
+"",med_nsaid, None
+387207008,med_nsaid, Ibuprofen
+372588000,med_nsaid, Naproxen
+7034005,med_nsaid, Diclofenac
+"",med_nsaid, Other
+"",med_nsaid, Unknown
+"",med_nsaid_use_chronic, Yes
+"",med_nsaid_use_chronic, No
+"",med_nsaid_use_chronic, Unknown
+"",med_nsaid_usage, Chronic use
+"",med_nsaid_usage, Started due to recent onset of flu symptoms
+"",med_nsaid_usage, Other
+"",med_nsaid_usage, Unknown
+"",carmed, None
+373254001,carmed, Betablocker
+372813008,carmed, Antiarrhytmic drugs
+387461009,carmed, Digoxine
+372695000,carmed, Diuretics
+373304005,carmed, Calcium channel blocker (dihydropyridine)
+771384007,carmed, ACE inhibitor
+"",carmed, Angiotensin II receptor blocker
+372603003,carmed, Aldosterone antagonist
+763540002,carmed, Sacubitril/valsartan (Entresto)
+373692009,carmed, Phosphodiesterase inhibitors
+372560006,carmed, Anti-platelet agents
+766936008,carmed, Coumarin
+372636002,carmed, Direct oral anticoagulants (DOAC)
+373267003,carmed, Lipid lowering agents
+67866001,carmed, Insulin
+384953001,carmed, Oral antidiabetic agents
+"",carmed, Other cardiovascular medication
+4,carmed_bb,387506000
+386868003,carmed_bb, Bisoprolol (Emcor)
+386870007,carmed_bb, Carvedilol
+"",carmed_bb, Labetalol
+"",carmed_bb, Metoprolol (Selokeen)
+"",carmed_bb, Nebivolol (Nebilet)
+""carmed_bb, Propranolol
+""carmed_bb, Other
+""carmed_antiarrh, Class I
+""carmed_antiarrh, Class III
+""carmed_antiarrh, Class IV
+""carmed_antiarrh, Other
+""carmed_arrhyth_class1, 1a - Quinidine
+""carmed_arrhyth_class1, 1a - Disopyramide
+""carmed_arrhyth_class1, 1a - Procainamide
+""carmed_arrhyth_class1, 1b - Lidocaine
+""carmed_arrhyth_class1, 1b - Phenytoin
+""carmed_arrhyth_class1, 1b - Mexiletine
+""carmed_arrhyth_class1, 1b - Tocainide
+""carmed_arrhyth_class1, 1c - Flecainide
+""carmed_arrhyth_class1, 1c - Propafenone
+""carmed_arrhyth_class3, Amiodarone
+""carmed_arrhyth_class3, Sotalol
+""carmed_arrhyth_class3, Ibutilide
+""carmed_arrhyth_class3, Dofetilide
+""carmed_arrhyth_class4, Diltiazem (Tildiem)
+""carmed_arrhyth_class4, Verapamil (Isoptin)
+""carmed_diuretic, Bumetanide (Burinex)
+""carmed_diuretic, Chloortalidon
+""carmed_diuretic, Furosemide (Lasix)
+""carmed_diuretic, Hydrochlorothiazide
+""carmed_diuretic, Other
+"",carmed_cablock, Amlodipin (Norvasc)
+"",carmed_cablock, Barnidipin (Cyress
+"",carmed_cablock, Nifedipin (Adalat)
+"",carmed_cablock, Other
+"",carmed_acei, Captopril
+"",carmed_acei, Enalapril (Renitec)
+"",carmed_acei, Lisinopril (Zestril)
+"",carmed_acei, Perindopril (Coversyl)
+"",carmed_acei, Other
+"",carmed_acei_chronic, Yes
+"",carmed_acei_chronic, No
+"",carmed_acei_chronic, Unknown
+"",carmed_arb, Candesartan (Atacand)
+"",carmed_arb, Irbesartan (Aprovel)
+"",carmed_arb, Losartan (Cozaar
+"",carmed_arb, Valsartan (Diovan
+"",carmed_arb, Other
+"",carmed_arb_chronic, Yes
+"",carmed_arb_chronic, No
+"",carmed_arb_chronic, Unknown
+"",carmed_mra, Spironolacton
+"",carmed_mra, Eplerenon
+"",carmed_pde5, Avanafil
+"",carmed_pde5, Sildenafil
+"",carmed_pde5, Tadalafil
+"",carmed_pde5, Vardenaifl
+"",carmed_antiplate, Acetylsalicylic acid
+"",carmed_antiplate, Carbasalate calcium
+"",carmed_antiplate, Clopidogrel (Plavix
+"",carmed_antiplate, Dipyridamole (Persantin)
+"",carmed_antiplate, Prasugrel (Efient)
+"",carmed_antiplate, Ticagrelor (Brilique)
+"",carmed_antiplate, Other
+"",carmed_coum, Acenocoumarol
+"",carmed_coum, Fenprocoumon (Marcoumar)
+"",carmed_coum, Warfarin
+"",carmed_doac, Apixaban (Eliquis)
+"",carmed_doac, Dabigatran (Pradaxa)
+"",carmed_doac, Edoxaban (Lixiana)
+"",carmed_doac, Rivaroxaban (Xarelto)
+"",carmed_doac, Other
+"",carmed_lipid, Atorvastatin (Lipitor)
+"",carmed_lipid, Ciprofibrate (Modalim)
+"",carmed_lipid, Evolocumab (Repatha)
+"",carmed_lipid, Ezetimib (Ezetrol)
+"",carmed_lipid, Gemfibrozil (Lopid)
+"",carmed_lipid, Pravastatin (Selektine)
+"",carmed_lipid, Rosuvastatin (Crestor)
+"",carmed_lipid, Simvastatin (Zocor)
+"",carmed_lipid, Other
+"",carmed_oraldm, Gliclazide (Diamicron)
+"",carmed_oraldm, Glimepiride (Amaryl)
+"",carmed_oraldm, Metformin (Glucient)
+"",carmed_oraldm, Sitagliptine (Januvia)
+"",carmed_oraldm, Other
+"",pre_othmed_cmoccur, Yes
+"",pre_othmed_cmoccur, No
+"",pre_othmed_cmoccur, Unknown

@@ -94,6 +94,11 @@ Documentation
 
 Include a link to your project's full documentation here.
 
+SNOMED Notes
+############
+SNOMED is an ontology expressing medical concepts.
+
+
 Contributing
 ************
 
