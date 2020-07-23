@@ -1,2 +1,6 @@
 PyCap
 pandas
+fhirclient
+rdflib
+requests
+fhirtordf
