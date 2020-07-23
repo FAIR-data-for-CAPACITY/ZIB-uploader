@@ -1,0 +1,110 @@
+{
+  "subject": {
+    "display": "",
+    "reference": ""
+  },
+  "context": {
+    "display": "",
+    "reference": ""
+  },
+  "reasonCode": [
+    {
+      "text": ""
+    }
+  ],
+  "status": "",
+  "language": "",
+  "meta": {
+    "versionId": "",
+    "profile": [
+      "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse"
+    ],
+    "lastUpdated": "2020-07-22T13:24:45.7781348+00:00"
+  },
+  "identifier": [
+    {
+      "system": "",
+      "value": "",
+      "use": ""
+    }
+  ],
+  "implicitRules": "",
+  "id": "",
+  "note": [
+    {
+      "time": "",
+      "text": ""
+    }
+  ],
+  "dosage": [
+    {
+      "patientInstruction": "",
+      "text": ""
+    }
+  ],
+  "reasonNotTaken": [
+    {
+      "text": ""
+    }
+  ],
+  "taken": "",
+  "derivedFrom": [
+    {
+      "display": "",
+      "reference": ""
+    },
+    {
+      "display": "",
+      "reference": ""
+    }
+  ],
+  "extension": [
+    {
+      "valueBase64Binary": ""
+    },
+    {
+      "valueBase64Binary": ""
+    },
+    {
+      "valueBase64Binary": ""
+    },
+    {
+      "valueBase64Binary": ""
+    },
+    {
+      "valueBase64Binary": ""
+    },
+    {
+      "valueBase64Binary": ""
+    }
+  ],
+  "modifierExtension": [
+    {
+      "valueBase64Binary": ""
+    },
+    {
+      "valueBase64Binary": ""
+    }
+  ],
+  "informationSource": {
+    "display": "",
+    "reference": ""
+  },
+  "dateAsserted": "",
+  "effectivePeriod": {
+    "start": "",
+    "end": ""
+  },
+  "medicationReference": {
+    "display": "",
+    "reference": ""
+  },
+  "category": {
+    "text": ""
+  },
+  "text": {
+    "div": "",
+    "status": ""
+  },
+  "resourceType": "MedicationStatement"
+}

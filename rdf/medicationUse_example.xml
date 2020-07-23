@@ -1,0 +1,68 @@
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="1638386191" />
+  <meta>
+    <versionId value="1833005383" />
+    <lastUpdated value="2020-07-21T14:14:15.0331788+00:00" />
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse" />
+  </meta>
+  <implicitRules value="http://hl7.org/fhir/reference" />
+  <language value="da" />
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">Hello world!</div>
+  </text>
+  <identifier>
+    <use value="temp" />
+    <system value="http://www.acme.com/identifiers/patient" />
+    <value value="123456" />
+  </identifier>
+  <context>
+    <reference value="abc" />
+    <display value="abc" />
+  </context>
+  <status value="entered-in-error" />
+  <category>
+    <text value="abc" />
+  </category>
+  <medicationReference>
+    <reference value="abc" />
+    <display value="abc" />
+  </medicationReference>
+  <effectivePeriod>
+    <start value="2017-04-16T04:36:00+00:00" />
+    <end value="2008-09-01T14:10:00+00:00" />
+  </effectivePeriod>
+  <dateAsserted value="2017-06-14" />
+  <informationSource>
+    <reference value="abc" />
+    <display value="abc" />
+  </informationSource>
+  <subject>
+    <reference value="abc" />
+    <display value="abc" />
+  </subject>
+  <derivedFrom>
+    <reference value="abc" />
+    <display value="abc" />
+  </derivedFrom>
+  <derivedFrom>
+    <reference value="abc" />
+    <display value="abc" />
+  </derivedFrom>
+  <taken value="y" />
+  <reasonNotTaken>
+    <text value="abc" />
+  </reasonNotTaken>
+  <reasonCode>
+    <text value="abc" />
+  </reasonCode>
+  <note>
+    <time value="1991-04-25T01:58:00+00:00" />
+    <text value="abc" />
+  </note>
+  <dosage>
+    <text value="abc" />
+    <patientInstruction value="abc" />
+    <asNeededBoolean value="false" />
+  </dosage>
+</MedicationStatement>

@@ -1,0 +1,199 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/MedicationStatement/100> a fhir:MedicationStatement ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.extension [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Extension.valueBase64Binary [
+            fhir:value ""^^xsd:base64Binary
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Extension.valueBase64Binary [``
+            fhir:value ""^^xsd:base64Binary
+        ]
+    ],
+        [
+        fhir:index "3"^^xsd:integer ;
+        fhir:Extension.valueBase64Binary [
+            fhir:value ""^^xsd:base64Binary
+        ]
+    ],
+        [
+        fhir:index "4"^^xsd:integer ;
+        fhir:Extension.valueBase64Binary [
+            fhir:value ""^^xsd:base64Binary
+        ]
+    ],
+        [
+        fhir:index "5"^^xsd:integer ;
+        fhir:Extension.valueBase64Binary [
+            fhir:value ""^^xsd:base64Binary
+        ]
+    ],
+        [
+        fhir:index "2"^^xsd:integer ;
+        fhir:Extension.valueBase64Binary [
+            fhir:value ""^^xsd:base64Binary
+        ]
+    ] ;
+    fhir:DomainResource.modifierExtension [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Extension.valueBase64Binary [
+            fhir:value ""^^xsd:base64Binary
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Extension.valueBase64Binary [
+            fhir:value ""^^xsd:base64Binary
+        ]
+    ] ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "" ;
+        fhir:Narrative.status [
+            fhir:value ""
+        ]
+    ] ;
+    fhir:MedicationStatement.category [
+        fhir:CodeableConcept.text [
+            fhir:value ""
+        ]
+    ] ;
+    fhir:MedicationStatement.context [
+        fhir:link fhir: ;
+        fhir:Reference.display [
+            fhir:value ""
+        ] ;
+        fhir:Reference.reference [
+            fhir:value ""
+        ]
+    ] ;
+    fhir:MedicationStatement.dateAsserted [
+        fhir:value ""^^xsd:dateTime
+    ] ;
+    fhir:MedicationStatement.derivedFrom [
+        fhir:index "1"^^xsd:integer ;
+        fhir:link fhir: ;
+        fhir:Reference.display [
+            fhir:value ""
+        ] ;
+        fhir:Reference.reference [
+            fhir:value ""
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:link fhir: ;
+        fhir:Reference.display [
+            fhir:value ""
+        ] ;
+        fhir:Reference.reference [
+            fhir:value ""
+        ]
+    ] ;
+    fhir:MedicationStatement.dosage [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Dosage.patientInstruction [
+            fhir:value ""
+        ] ;
+        fhir:Dosage.text [
+            fhir:value ""
+        ]
+    ] ;
+    fhir:MedicationStatement.effectivePeriod [
+        fhir:Period.end [
+            fhir:value ""^^xsd:dateTime
+        ] ;
+        fhir:Period.start [
+            fhir:value ""^^xsd:dateTime
+        ]
+    ] ;
+    fhir:MedicationStatement.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value ""
+        ] ;
+        fhir:Identifier.use [
+            fhir:value ""
+        ] ;
+        fhir:Identifier.value [
+            fhir:value ""
+        ]
+    ] ;
+    fhir:MedicationStatement.informationSource [
+        fhir:link fhir: ;
+        fhir:Reference.display [
+            fhir:value ""
+        ] ;
+        fhir:Reference.reference [
+            fhir:value ""
+        ]
+    ] ;
+    fhir:MedicationStatement.medicationReference [
+        fhir:link fhir: ;
+        fhir:Reference.display [
+            fhir:value ""
+        ] ;
+        fhir:Reference.reference [
+            fhir:value "prednisone"
+        ]
+    ] ;
+    fhir:MedicationStatement.note [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Annotation.text [
+            fhir:value ""
+        ] ;
+        fhir:Annotation.time [
+            fhir:value ""^^xsd:dateTime
+        ]
+    ] ;
+    fhir:MedicationStatement.reasonCode [
+        fhir:index "0"^^xsd:integer ;
+        fhir:CodeableConcept.text [
+            fhir:value ""
+        ]
+    ] ;
+    fhir:MedicationStatement.status [
+        fhir:value ""
+    ] ;
+    fhir:MedicationStatement.subject [
+        fhir:link fhir: ;
+        fhir:Reference.display [
+            fhir:value ""
+        ] ;
+        fhir:Reference.reference [
+            fhir:value ""
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value ""
+    ] ;
+    fhir:Resource.implicitRules [
+        fhir:value ""
+    ] ;
+    fhir:Resource.language [
+        fhir:value ""
+    ] ;
+    fhir:Resource.meta [
+        fhir:Meta.lastUpdated [
+            fhir:value "2020-07-22T13:24:45.778135+00:00"^^xsd:dateTime
+        ] ;
+        fhir:Meta.profile [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "http://nictiz.nl/fhir/StructureDefinition/zib-MedicationUse"
+        ] ;
+        fhir:Meta.versionId [
+            fhir:value ""
+        ]
+    ] .
+
+<http://hl7.org/fhir/MedicationStatement/.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl ;
+    owl:versionIRI <http://hl7.org/fhir/MedicationStatement//_history/.ttl> .
+
+fhir: a fhir:Resource .
+
