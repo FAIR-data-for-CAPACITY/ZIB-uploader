@@ -94,8 +94,10 @@ Include a link to your project's full documentation here.
 Ontologies
 **********
 - COVIDCRFRAPID_
+- RxNORM_
 
-.. _COVIDCRFRAPID: http://purl.bioontology.org/ontology/COVIDCRFRAPID
+.. _COVIDRFRAPID: http://purl.bioontology.org/ontology/COVIDCRFRAPID
+.. _RxNORM: http://purl.bioontology.org/ontology/RXNORM
 
 Contributing
 ************
