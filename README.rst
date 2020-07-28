@@ -22,11 +22,11 @@
 (Customize these badges with your own links, and check https://shields.io/ or https://badgen.net/ to see which other badges are available.)
 
 .. |GitHub Badge| image:: https://img.shields.io/badge/github-repo-000.svg?logo=github&labelColor=gray&color=blue
-   :target: https://github.com/ FAIR-data-for-CAPACITY /zib_uploader
+   :target: https://github.com/FAIR-data-for-CAPACITY/zib_uploader
    :alt: GitHub Badge
 
-.. |License Badge| image:: https://img.shields.io/github/license/ FAIR-data-for-CAPACITY /zib_uploader
-   :target: https://github.com/ FAIR-data-for-CAPACITY /zib_uploader
+.. |License Badge| image:: https://img.shields.io/github/license/FAIR-data-for-CAPACITY/zib_uploader
+   :target: https://github.com/FAIR-data-for-CAPACITY/zib_uploader
    :alt: License Badge
 
 .. |PyPI Badge| image:: https://img.shields.io/pypi/v/zib_uploader.svg?colorB=blue
@@ -38,7 +38,7 @@
 
 ..
     Goto https://zenodo.org/account/settings/github/ to enable Zenodo/GitHub integration.
-    After creation of a GitHub release at https://github.com/ FAIR-data-for-CAPACITY /zib_uploader/releases
+    After creation of a GitHub release at https://github.com/FAIR-data-for-CAPACITY/zib_uploader/releases
     there will be a Zenodo upload created at https://zenodo.org/deposit with a DOI, this DOI can be put in the Zenodo badge urls.
     In the README, we prefer to use the concept DOI over versioned DOI, see https://help.zenodo.org/#versioning.
 .. |Zenodo Badge| image:: https://zenodo.org/badge/DOI/< replace with created DOI >.svg
@@ -64,9 +64,6 @@ ZIB uploader
 ################################################################################
 
 Converts and uploads ZIB triples to the CAPACITY registry
-
-
-The project setup is documented in `a separate document <project_setup.rst>`_. Feel free to remove this document (and/or the link to this document) if you don't need it.
 
 Installation
 ------------
@@ -94,10 +91,11 @@ Documentation
 
 Include a link to your project's full documentation here.
 
-SNOMED Notes
-############
-SNOMED is an ontology expressing medical concepts.
+Ontologies
+**********
+- COVIDCRFRAPID_
 
+.. _COVIDCRFRAPID: http://purl.bioontology.org/ontology/COVIDCRFRAPID
 
 Contributing
 ************
