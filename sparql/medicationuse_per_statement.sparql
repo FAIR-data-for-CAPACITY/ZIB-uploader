@@ -1,0 +1,7 @@
+PREFIX fhir: <http://hl7.org/fhir/>
+select ?s ?medicationValue where {
+    ?s a fhir:MedicationStatement .
+    ?s fhir:MedicationStatement.medicationReference ?bnode .
+    ?bnode fhir:Reference.reference ?valueBnode .
+    ?valueBnode fhir:value ?medicationValue .
+}
