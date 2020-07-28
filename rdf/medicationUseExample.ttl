@@ -12,7 +12,7 @@
     ],
         [
         fhir:index "1"^^xsd:integer ;
-        fhir:Extension.valueBase64Binary [``
+        fhir:Extension.valueBase64Binary [
             fhir:value ""^^xsd:base64Binary
         ]
     ],
