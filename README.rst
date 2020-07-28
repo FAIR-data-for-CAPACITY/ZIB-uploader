@@ -25,8 +25,8 @@
    :target: https://github.com/FAIR-data-for-CAPACITY/zib_uploader
    :alt: GitHub Badge
 
-.. |License Badge| image:: https://img.shields.io/github/license/FAIR-data-for-CAPACITY/zib_uploader
-   :target: https://github.com/FAIR-data-for-CAPACITY/zib_uploader
+.. |License Badge| image:: https://img.shields.io/github/license/FAIR-data-for-capacity/ZIB-uploader
+   :target: https://github.com/FAIR-data-for-CAPACITY/zib_uploaderhttp://purl.bioontology.org/ontology/RXNORM
    :alt: License Badge
 
 .. |PyPI Badge| image:: https://img.shields.io/pypi/v/zib_uploader.svg?colorB=blue
