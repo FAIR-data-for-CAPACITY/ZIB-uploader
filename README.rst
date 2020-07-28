@@ -94,7 +94,7 @@ Ontologies
 - COVIDCRFRAPID_
 - RxNORM_
 
-.. _COVIDRFRAPID: http://purl.bioontology.org/ontology/COVIDCRFRAPID
+.. _COVIDCRFRAPID: http://purl.bioontology.org/ontology/COVIDCRFRAPID
 .. _RxNORM: http://purl.bioontology.org/ontology/RXNORM
 
 Contributing
