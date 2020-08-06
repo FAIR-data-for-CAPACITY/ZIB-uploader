@@ -1,4 +1,5 @@
 from collections import namedtuple
+from typing import Iterator
 
 import requests
 from tqdm import tqdm
@@ -57,13 +58,14 @@ class ClassMappingsFetcher:
                                        classes=(mapping['classes'][0]['@id'],
                                                 mapping['classes'][1]['@id']))
 
-    def fetch(self):
+    def fetch(self) -> Iterator[OntologyClassMapping]:
         """
-        Fetch ATC ontology to other ontology class mappings from bioportal.
-        This loads around 250000 mapping pairs, so it can take around 5 minutes.
+        Fetch ontology to other ontology class mappings from bioportal.
+        For ATC this loads around 250000 mapping pairs, so it can take around 5
+        minutes. For other mappings it could possibly take even longer.
 
         Yields:
-            AtcClassMapping namedtuples
+            OntologyClassMapping namedtuples
         """
         for page in self._paginator():
             yield from self._get_mappings_from_page(page)
