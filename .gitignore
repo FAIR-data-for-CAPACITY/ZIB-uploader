@@ -3,3 +3,4 @@
 venv/
 notebooks/mappings.json
 .env
+*/__pycache__
