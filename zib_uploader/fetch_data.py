@@ -6,23 +6,30 @@ from tqdm import tqdm
 ATC_MAPPINGS_URL = 'http://data.bioontology.org/ontologies/ATC/mappings'
 BIOPORTAL_API_KEY = '8b5b7825-538d-40e0-9e9e-5ab9274a9aeb'
 
-AtcClassMapping = namedtuple('AtcClassMapping',
-                             ['source', 'atc_class', 'mapped_class'])
-AtcClassMapping.__doc__ = """
-Mapping of ATC ontology class to another ontology class
+OntologyClassMapping = namedtuple('OntologyClassMapping',
+                                  ['source', 'classes'])
+OntologyClassMapping.__doc__ = """
+Mapping of ontology class to another ontology class
 
 Args:
     source (str): Source of the mapping
-    atc_class (str): ATC class URI
-    mapped_class (str): corresponding class in other ontology URI
+    classes (size 2 tuple if strings): URIs of classes that are mapped to each
+        other
 """
 
 
-class AtcClassMappingsFetcher:
+class ClassMappingsFetcher:
     """
-    Fetch ATC ontology to other ontology class mappings from bioportal.
+    Fetch ontology to other ontology class mappings from bioportal.
     """
-    def __init__(self, pagesize=5000):
+    def __init__(self, url=ATC_MAPPINGS_URL, pagesize=5000):
+        """
+        Args:
+            url (str): Url pointing to bioportal mappings, default is ATC
+                mappings
+            pagesize (int): Define pagesize when paginating
+        """
+        self.url = url
         self.pagesize = pagesize
 
     def _get(self, url: str):
@@ -34,7 +41,7 @@ class AtcClassMappingsFetcher:
         return result.json()
 
     def _paginator(self):
-        page = self._get(url=ATC_MAPPINGS_URL)
+        page = self._get(url=self.url)
         yield page
         progress_bar = tqdm(total=page['pageCount'])
         while page['links']['nextPage'] is not None:
@@ -46,9 +53,9 @@ class AtcClassMappingsFetcher:
     def _get_mappings_from_page(page):
         for mapping in page['collection']:
             source = mapping['source']
-            yield AtcClassMapping(source=source,
-                                  atc_class=mapping['classes'][0]['@id'],
-                                  mapped_class=mapping['classes'][1]['@id'])
+            yield OntologyClassMapping(source=source,
+                                       classes=(mapping['classes'][0]['@id'],
+                                                mapping['classes'][1]['@id']))
 
     def fetch(self):
         """

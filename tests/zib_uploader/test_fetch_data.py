@@ -1,10 +1,10 @@
 import pytest
 
-from zib_uploader.fetch_data import AtcClassMappingsFetcher, AtcClassMapping
+from zib_uploader.fetch_data import ClassMappingsFetcher, OntologyClassMapping
 
 
 @pytest.mark.integration_test
-def test_atc_class_mapping_fetcher_integrated():
-    fetcher = AtcClassMappingsFetcher(pagesize=1)
+def test_class_mapping_fetcher_integrated():
+    fetcher = ClassMappingsFetcher(pagesize=1)
     mapping = next(fetcher.fetch())
-    assert type(mapping) is AtcClassMapping
+    assert type(mapping) is OntologyClassMapping
