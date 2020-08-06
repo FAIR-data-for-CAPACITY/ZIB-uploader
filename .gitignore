@@ -1,6 +1,10 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
 .idea/
 .ipynb_checkpoints/
 venv/
 notebooks/mappings.json
 .env
-*/__pycache__
