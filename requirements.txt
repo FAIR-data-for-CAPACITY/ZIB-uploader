@@ -4,3 +4,4 @@ fhirclient
 rdflib
 requests
 fhirtordf
+tqdm==4.48.2
