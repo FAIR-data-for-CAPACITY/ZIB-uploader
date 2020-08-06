@@ -1,3 +1,4 @@
+import os
 from collections import namedtuple
 from typing import Iterator
 
@@ -5,7 +6,8 @@ import requests
 from tqdm import tqdm
 
 ATC_MAPPINGS_URL = 'http://data.bioontology.org/ontologies/ATC/mappings'
-BIOPORTAL_API_KEY = '8b5b7825-538d-40e0-9e9e-5ab9274a9aeb'
+DEFAULT_PAGESIZE = 5000
+BIOPORTAL_API_KEY = os.environ.get('BIOPORTAL_API_KEY')
 
 OntologyClassMapping = namedtuple('OntologyClassMapping',
                                   ['source', 'classes'])
@@ -23,7 +25,7 @@ class ClassMappingsFetcher:
     """
     Fetch ontology to other ontology class mappings from bioportal.
     """
-    def __init__(self, url=ATC_MAPPINGS_URL, pagesize=5000):
+    def __init__(self, url=ATC_MAPPINGS_URL, pagesize=DEFAULT_PAGESIZE):
         """
         Args:
             url (str): Url pointing to bioportal mappings, default is ATC
