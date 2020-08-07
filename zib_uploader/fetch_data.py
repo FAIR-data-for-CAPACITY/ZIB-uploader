@@ -1,9 +1,12 @@
+import logging
 import os
 from collections import namedtuple
 from typing import Iterator
 
 import requests
 from tqdm import tqdm
+
+logger = logging.getLogger(__name__)
 
 ATC_MAPPINGS_URL = 'http://data.bioontology.org/ontologies/ATC/mappings'
 DEFAULT_PAGESIZE = 5000
@@ -69,5 +72,7 @@ class ClassMappingsFetcher:
         Yields:
             OntologyClassMapping namedtuples
         """
+        logger.info(f'Fetching ontology mappings from {self.url}, can take '
+                    f'several minutes')
         for page in self._paginator():
             yield from self._get_mappings_from_page(page)
