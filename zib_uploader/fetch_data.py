@@ -12,8 +12,7 @@ ATC_MAPPINGS_URL = 'http://data.bioontology.org/ontologies/ATC/mappings'
 DEFAULT_PAGESIZE = 5000
 BIOPORTAL_API_KEY = os.environ.get('BIOPORTAL_API_KEY')
 
-OntologyMapping = namedtuple('OntologyClassMapping',
-                             ['source', 'classes'])
+OntologyMapping = namedtuple('OntologyMapping', ['source', 'classes'])
 OntologyMapping.__doc__ = """
 Mapping of ontology class to another ontology class
 
@@ -70,7 +69,7 @@ class OntologyMappingsFetcher:
         minutes. For other mappings it could possibly take even longer.
 
         Yields:
-            OntologyClassMapping namedtuples
+            OntologyMapping namedtuples
         """
         logger.info(f'Fetching ontology mappings from {self.url}, can take '
                     f'several minutes')
