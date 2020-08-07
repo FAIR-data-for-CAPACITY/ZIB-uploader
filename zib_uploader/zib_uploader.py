@@ -14,7 +14,7 @@ DEFAULT_VALID_SOURCES = ('CUI',)
 
 class OntologyMappingsProcessor:
     """
-    Process ontology mappings: (1) (optionally) filter out duplicates exact
+    Process ontology mappings: (1) (optionally) filter out exact
     duplicates(same source, same classes mapped, probably we are missing
     some annotation of the mappings here), (2) filter out mappings with
     invalid sources, (3) transform mappings into RDF triples
