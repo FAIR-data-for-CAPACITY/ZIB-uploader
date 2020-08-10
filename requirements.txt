@@ -1,7 +1,8 @@
+click==7.1.1
+fhirclient
+fhirtordf
 PyCap
 pandas
-fhirclient
 rdflib
 requests
-fhirtordf
 tqdm==4.48.2
