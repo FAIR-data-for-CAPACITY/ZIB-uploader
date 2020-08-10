@@ -1,4 +1,3 @@
-import itertools
 import logging
 
 import click
@@ -20,8 +19,7 @@ def main(output_filepath):
     """
     fetcher = OntologyMappingsFetcher()
     processor = OntologyMappingsProcessor()
-    data = itertools.islice(fetcher.fetch())
-    data = processor.process(data)
+    data = processor.process(fetcher.fetch())
     g = Graph()
     for s, p, o in data:
         g.add((URIRef(s), URIRef(p), URIRef(o)))
