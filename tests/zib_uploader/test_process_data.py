@@ -9,7 +9,7 @@ import logging
 import pytest
 
 from zib_uploader.fetch_data import OntologyMapping, OntologyMappingsFetcher
-from zib_uploader.zib_uploader import OntologyMappingsProcessor
+from zib_uploader.process_data import OntologyMappingsProcessor
 
 logging.basicConfig(level=logging.DEBUG)
 
