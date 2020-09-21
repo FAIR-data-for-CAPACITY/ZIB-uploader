@@ -1,0 +1,8 @@
+@prefix ns1: <zib#> .
+@prefix zib: <http://example.org/ZIB> .
+
+<http://example.org/patient/bob> ns1:hasZibRecord <http://example.org/zib_record/bobsmedication> .
+
+<http://example.org/zib_record/bobsmedication> a zib:MedicationUse ;
+    ns1:medicationCode <ATC#C01BA01> .
+
