@@ -6,17 +6,26 @@ import base64
 DOWNLOADS_DIR = Path('downloads')
 
 
-def load(url):
+def get(url: str) -> Path:
+    """
+    Download file from URL or retrieves it from cache. Returns the path to the file on disk.
+    :param url:
+    :return:
+    """
     DOWNLOADS_DIR.mkdir(exist_ok=True)
 
-    # Hashing the url to turn it into something that is acceptable as filename
-    file_name = Path(base64.b64encode(url.encode()).decode())
+    # Turning into something that is acceptable as filename
+    file_name = base64.b64encode(url.encode()).decode()
+
+    # Removing the padding
+    file_name = file_name.replace('=', '')
+
     file_path = DOWNLOADS_DIR / file_name
 
     if not file_path.exists():
         download(url, file_path)
 
-    return file_path.open('r')
+    return file_path
 
 
 def download(url, target_path):
