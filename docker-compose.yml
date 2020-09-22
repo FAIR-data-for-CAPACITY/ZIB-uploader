@@ -5,6 +5,6 @@ services:
     image: "jupyter/base-notebook"
     volumes:
       - ./:/home/jovyan/work
-      - ./install_packages_compose.sh:/usr/local/bin/before-notebook.d/install_packages_compose.sh
+      - ./configure_environment.sh:/usr/local/bin/before-notebook.d/configure_environment.sh
     ports:
       - 8888:8888

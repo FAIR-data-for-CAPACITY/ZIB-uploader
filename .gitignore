@@ -8,3 +8,4 @@ __pycache__/
 venv/
 notebooks/mappings.json
 .env
+downloads/
