@@ -7,3 +7,4 @@ rdflib
 requests
 tqdm==4.48.2
 owlrl
+xlrd

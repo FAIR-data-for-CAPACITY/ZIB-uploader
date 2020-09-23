@@ -9,3 +9,4 @@ venv/
 notebooks/mappings.json
 .env
 downloads/
+capacity_mapping.xlsx
