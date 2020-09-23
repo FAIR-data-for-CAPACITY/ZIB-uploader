@@ -18,6 +18,8 @@
      -
    * - Continuous integration
      - |Python Build| |PyPI Publish|
+   * - Code coverage
+     - |Coverage Badge|
 
 .. |GitHub Badge| image:: https://img.shields.io/badge/github-repo-000.svg?logo=github&labelColor=gray&color=blue
    :target: https://github.com/FAIR-data-for-CAPACITY/zib_uploader
@@ -34,8 +36,7 @@
    :target: https://www.research-software.nl/software/zib_uploader
    :alt: Research Software Directory Badge
 
-..
-    Goto https://zenodo.org/account/settings/github/ to enable Zenodo/GitHub integration.
+..    Goto https://zenodo.org/account/settings/github/ to enable Zenodo/GitHub integration.
     After creation of a GitHub release at https://github.com/FAIR-data-for-CAPACITY/zib_uploader/releases
     there will be a Zenodo upload created at https://zenodo.org/deposit with a DOI, this DOI can be put in the Zenodo badge urls.
     In the README, we prefer to use the concept DOI over versioned DOI, see https://help.zenodo.org/#versioning.
@@ -43,8 +44,7 @@
    :target: https://doi.org/<replace with created DOI>
    :alt: Zenodo Badge
 
-..
-    A CII Best Practices project can be created at https://bestpractices.coreinfrastructure.org/en/projects/new
+.. A CII Best Practices project can be created at https://bestpractices.coreinfrastructure.org/en/projects/new
 .. |CII Best Practices Badge| image:: https://bestpractices.coreinfrastructure.org/projects/< replace with created project identifier >/badge
    :target: https://bestpractices.coreinfrastructure.org/projects/< replace with created project identifier >
    :alt: CII Best Practices Badge
@@ -56,6 +56,9 @@
 .. |PyPI Publish| image:: https://github.com/ FAIR-data-for-CAPACITY /zib_uploader/workflows/PyPI/badge.svg
    :target: https://github.com/ FAIR-data-for-CAPACITY /zib_uploader/actions?query=workflow%3A%22PyPI%22
    :alt: PyPI Publish
+
+.. |Coverage Badge| image:: https://coveralls.io/repos/github/FAIR-data-for-CAPACITY/ZIB-uploader/badge.svg?branch=master
+   :target: https://coveralls.io/github/FAIR-data-for-CAPACITY/ZIB-uploader?branch=master
 
 ################################################################################
 ZIB uploader
