@@ -8,3 +8,5 @@ services:
       - ./configure_environment.sh:/usr/local/bin/before-notebook.d/configure_environment.sh
     ports:
       - 8888:8888
+    environment:
+      - REDCAP_TOKEN=${REDCAP_TOKEN}
