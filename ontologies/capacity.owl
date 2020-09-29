@@ -13,11 +13,56 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/capacity#capacityProperty -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/capacity#capacityProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/capacity#choiceName -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/capacity#choiceName">
+        <rdfs:subPropertyOf rdf:resource="http://example.org/capacity#capacityProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/capacity#fieldName -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/capacity#fieldName">
+        <rdfs:subPropertyOf rdf:resource="http://example.org/capacity#capacityProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://example.org/capacity#CapacityClass -->
+
+    <owl:Class rdf:about="http://example.org/capacity#CapacityClass">
+        <owl:disjointWith rdf:resource="http://example.org/capacity#CapacityField"/>
+    </owl:Class>
     
 
 
@@ -27,266 +72,11 @@
     
 
 
-    <!-- http://example.org/capacity#carmed___1 -->
+    <!-- http://example.org/capacity#Choice -->
 
-    <owl:Class rdf:about="http://example.org/capacity#carmed___1">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
+    <owl:Class rdf:about="http://example.org/capacity#Choice">
+        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityClass"/>
     </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed___10 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed___10">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed___11 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed___11">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed___12 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed___12">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed___13 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed___13">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed___14 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed___14">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed___15 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed___15">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed___16 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed___16">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed___17 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed___17">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed___3 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed___3">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed___4 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed___4">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed___5 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed___5">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed___6 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed___6">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed___7 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed___7">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed___8 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed___8">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed___9 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed___9">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed___99 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed___99">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed_bb___1 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed_bb___1">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed_bb___2 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed_bb___2">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed_bb___3 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed_bb___3">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed_bb___4 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed_bb___4">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed_bb___5 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed_bb___5">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed_bb___6 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed_bb___6">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed_bb___7 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed_bb___7">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- http://example.org/capacity#carmed_bb___99 -->
-
-    <owl:Class rdf:about="http://example.org/capacity#carmed_bb___99">
-        <rdfs:subClassOf rdf:resource="http://example.org/capacity#CapacityField"/>
-    </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___1"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___10"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___11"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___12"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___13"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___14"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___15"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___16"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___17"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___3"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___4"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___5"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___6"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___7"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___8"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___9"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___99"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___1"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___10"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___11"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___12"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___13"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___14"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___15"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___16"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___17"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___3"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___4"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___5"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___6"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___7"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___8"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___9"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed___99"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed_bb___1"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed_bb___2"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed_bb___3"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed_bb___4"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed_bb___5"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed_bb___6"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed_bb___7"/>
-            <rdf:Description rdf:about="http://example.org/capacity#carmed_bb___99"/>
-        </owl:members>
-    </rdf:Description>
 </rdf:RDF>
 
 
